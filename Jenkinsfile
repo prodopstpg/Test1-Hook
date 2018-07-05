@@ -1,11 +1,13 @@
 if(env.BRANCH_NAME == 'master'){
-    stage("Upload"){
-        sh 'sh /var/lib/jenkins/Ankit_script/Test.sh'
+    stage("Upload")
+    dir('/var/lib/jenkins/Ankit_script'){
+        sh ('Mtest.sh')
     }
 }
 else if(env.BRANCH_NAME == 'Dev'){
-    stage("Deploy"){
-        sh 'sh /var/lib/jenkins/Ankit_script/Mtest.sh'
+    stage("Deploy")
+    dir('/var/lib/jenkins/Ankit_script'){
+        sh ('Test.sh')
     }
 }
         
