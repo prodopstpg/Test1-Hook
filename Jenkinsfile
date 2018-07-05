@@ -4,7 +4,8 @@
             stage('Test') {
                 steps {
                     echo 'Hello World from master ...'
+                    echo "${GIT_LOCAL_BRANCH}"
                 }
-            }
+            }   
         }
     }
