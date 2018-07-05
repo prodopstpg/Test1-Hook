@@ -4,7 +4,7 @@ if(env.BRANCH_NAME == 'master'){
     }
 }
 else if(env.BRANCH_NAME == 'Dev'){
-    stage("Deploy")
+    stage("Deploy"){
     //dir('/var/lib/jenkins/Ankit_script'){
         sh ('Test.sh')
     }
