@@ -3,7 +3,7 @@
         stages {
             stage('Test') {
                 steps {
-                    echo 'Hello World from master ...'
+                    echo 'Hello World from Dev environment ...'
                 }
             }
         }
